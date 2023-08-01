@@ -1,0 +1,186 @@
+/* Using root to declare variables that you will use so that it will ease you into working on the styling */
+:root {
+    --percentage: 100%;
+    --pixelate: 1080px;
+    --color1: rgb(
+        calc(var(--percentage) * (85 / 255)),
+        calc(var(--percentage) * (85 / 255)),
+        calc(var(--percentage) * (85 / 255))
+    );
+    --color2: rgb(var(--percentage), var(--percentage), var(--percentage));
+    --color3: rgb(
+        calc(var(--percentage) * (119 / 255)),
+        calc(var(--percentage) * (119 / 255)),
+        calc(var(--percentage) * (119 / 255))
+    );
+    --color4: rgb(
+        calc(var(--percentage) * 0),
+        calc(var(--percentage) * 0),
+        calc(var(--percentage) * 0)
+    );
+    --color5: rgb(
+        calc(var(--percentage) * (238 / 255)),
+        calc(var(--percentage) * (89 / 255)),
+        calc(var(--percentage) * (89 / 255))
+    );
+    --color6: rgba(
+        calc(var(--percentage) * 0),
+        calc(var(--percentage) * 0),
+        calc(var(--percentage) * 0),
+        calc(var(--percentage) / 5)
+    );
+    --time: 1s;
+    --color7: rgb(
+        calc(var(--percentage) * (89 / 255)),
+        calc(var(--percentage) * (238 / 255)),
+        calc(var(--percentage) * (89 / 255))
+    );
+}
+
+body {
+    height: var(--percentage);
+    width: var(--percentage);
+    margin: calc(var(--percentage) * 0);
+    font-family: sans-serif;
+    color: var(--color4);
+}
+
+header {
+    height: calc(var(--pixelate) * (5 / 108));
+}
+
+header nav {
+    display: flex;
+    height: var(--percentage);
+}
+
+header nav div {
+    height: var(--percentage);
+    width: calc(var(--percentage) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav div button {
+    background-color: var(--color1);
+    color: var(--color2);
+    border: none;
+    cursor: pointer;
+    padding: calc(var(--pixelate) / 100) calc(var(--pixelate) / 100);
+    font-size: calc(var(--percentage) * 1.1);
+    border-radius: calc(var(--pixelate) / 50);
+}
+
+header nav div button:hover {
+    background-color: var(--color3);
+}
+
+main {
+    height: calc(var(--pixelate) * (535 / 1080));
+}
+
+main #news,
+main #articles {
+    height: var(--percentage);
+    padding: calc(var(--percentage) * 0);
+    display: none;
+}
+
+main #news .card,
+main #articles div {
+    background-color: var(--color5);
+    border-radius: calc(var(--pixelate) / 100);
+    padding: calc(var(--percentage) * 0);
+    width: calc(var(--percentage) * 0.9);
+    height: calc(var(--percentage) / 5);
+    margin: calc(var(--percentage) / 100) calc(var(--percentage) / 20);
+    box-shadow: 0 calc(var(--pixelate) / 200) calc(var(--pixelate) / 100) 0;
+    transition: calc(var(--time) * 0.3);
+}
+
+main #news .card:hover,
+main #articles div:hover {
+    box-shadow: 0 calc(var(--pixelate) / 100) calc(var(--pixelate) / 50) 0;
+}
+
+main #news .card h1 {
+    margin: calc(var(--percentage) * 0);
+    text-align: center;
+    margin-bottom: calc(var(--percentage) / 100);
+    font-size: calc(var(--percentage) * 1.21);
+    font-style: italic;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+main #news .card div {
+    margin: calc(var(--percentage) * 0) calc(var(--percentage) / 100);
+    width: calc(var(--percentage) * 0.98);
+    height: calc(var(--percentage) * 0.6);
+    font-weight: normal;
+    font-style: oblique;
+    text-align: center;
+    font-size: 22px;
+}
+
+main #articles {
+    background-color: var(--color2);
+}
+
+main #articles div {
+    background-color: var(--color7);
+    padding: calc(var(--percentage) / 100);
+    margin: calc(var(--percentage) / 100) calc(var(--percentage) / 20);
+    width: calc(var(--percentage) * 0.88);
+    font-style: oblique;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+img{
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 100px;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+}
+
+.top div {
+    display: flex;
+    align-items: center; 
+}
+
+.top h1{
+    font-weight: 500;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 10px;
+}
+
+#about_logo{
+    height: 48px;
+    width: 48px;
+    margin-left: 85em;
+}
+
+#github_logo{
+    height: 48px;
+    width: 48px;
+    margin-left: 1em;
+}
+
+.side_panel{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    align-items: baseline;
+}
+

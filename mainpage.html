@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>nwos</title>
+	<script src="mainpage.js"></script>
+	<link rel="stylesheet" href="mainpage.css" />
+</head>
+
+<body>	
+	<span class="top">
+		<div class="logo">
+			<!-- This div will be used to integrate the logo sam provided -->
+			<img src="images/logo.png" alt="Logo of the website">
+		</div>
+		<h1>Your News Portal</h1>
+		<ul class="side_panel">
+            <li>
+                <a class="about" data-target="modal" id="about_page" href="file:///opt/lampp/htdocs/News%20Portal/newsportal/about.html">
+                    <img id="about_logo" src="images/about.png">
+                </a>
+            </li>
+            <li>
+                <a class="code" href="https://github.com/ShandilyaSolutions/nwos">
+                    <img id="github_logo" src="images/github.png">
+                </a>
+            </li>
+        </ul>
+		<!-- Modal -->
+		<dialog id="About-modal">
+			<div class="modal">
+						  <div class="modal-content">
+							  <span class="close-button">&times;</span>
+							  <h1>Hello, I am Made by Shiv!</h1>
+						  </div>
+					  </div>
+		</dialog>
+	</span>
+	<header>
+		<nav>
+			<div>
+				<button onclick="openPage(this)">News</button>
+			</div>
+			<div>
+				<button onclick="openPage(this)">Articles</button>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div id="news">
+			<!-- Need to automate this using a news API -->
+			<!-- Priority task is to add date manually(later automatically in each card) and scrolling feature.-->
+			<div class="card">
+				<h1>Delhi</h1>
+				<div>Operationalise Safe City Project by August: Saxena to Delhi Police</div>
+			</div>
+			<div class="card">
+				<h1>Other States</h1>
+				<div>Fourth Manipur BJP legislator quits administrative post</div>
+			</div>
+			<div class="card">
+				<h1>India</h1>
+				<div>Supreme Court to announce date of hearing on plea to ‘abolish’ collegium system, revive NJAC</div>
+			</div>
+			<div class="card">
+				<h1>India</h1>
+				<div>New IT rules dont seem to protect parody or satire, says HC</div>
+			</div>
+			<div class="card">
+				<h1>Rahul Gandhi out of Parliament</h1>
+				<div>Due to his objectionable speech in which targeted the Modi community, Rahul Gandhi was punished by
+					Surat court. Due to this criminal act, he was removed from the parliament</div>
+			</div>
+			<div class="card">
+				<h1>Covid-19 India Update</h1>
+				<div>India logs 7,178 new COVID-19 cases; active cases dip to 65,683</div>
+			</div>
+			<div class="card">
+				<h1>India</h1>
+				<div>Poonch terror attack | Attackers untraced as operations complete five days; around 50 detained</div>
+			</div>
+			<div class="card">
+				<h1>Dividend news</h1>
+				<div>Tiger glucose buiscuit maker Britania to consider dividend on 26th April</div>
+			</div>
+			<div class="card">
+				<h1>IPL 2023</h1>
+				<div>SRH v/s DC : Delhi defeats Hyderabad by 7 runs in an exciting match at Rajiv Gandhi International Stadium.</div>
+			</div>
+			<div class="card">
+				<h1>Indo-China Clash</h1>
+				<div>Eastern Ladakh row: India, China look to LAC resolution to ‘enable progress’ in ties</div>
+			</div>
+		</div>
+		<div id="articles">
+			<div class="card">
+				<a href="https://www.thehindu.com/opinion/editorial/warless-punjab-the-amritpal-singh-arrest-and-keeping-punjab-peaceful/article66773904.ece">
+					<h1>Warless Punjab: the Amritpal Singh arrest and keeping Punjab peaceful</h1>
+				</a>
+			</div>
+			<div class="card">
+				<a href="https://www.thehindu.com/opinion/lead/pending-bills-the-issue-of-gubernatorial-inaction/article66774519.ece">
+					<h1>Pending Bills, the issue of gubernatorial inaction</h1>
+				</a>
+			</div>
+			<div class="card">
+				<a href="https://www.thehindu.com/opinion/op-ed/a-new-troika-for-indias-northeast-region/article66770821.ece">
+					<h1>A new troika for India’s northeast region</h1>
+				</a>
+			</div>
+			<div class="card">
+				<a href="https://www.thehindu.com/opinion/lead/india-as-most-populous-can-be-more-boon-than-bane/article66770664.ece">
+					<h1>India as most populous can be more boon than bane.</h1>
+				</a>
+			</div>
+			<div class="card">
+				<a href="https://www.thehindu.com/news/national/big-picture-savarkar-vs-gandhi-namo-vs-raga/article66769627.ece">
+					<h1>Political Line | Savarkar vs Gandhi; NAMO vs RAGA</h1>
+				</a>
+			</div>
+			<div class="card">
+				<a href="https://www.thehindu.com/opinion/open-page/keeping-fit/article66749041.ece">
+					<h1>Keeping Fit!</h1>
+				</a>
+			</div>
+		</div>
+	</main>
+	<footer></footer>
+</body>
+
+</html>
